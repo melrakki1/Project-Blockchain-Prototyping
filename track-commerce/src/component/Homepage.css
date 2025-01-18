@@ -1,0 +1,151 @@
+/* TrackCommerce.css */
+
+/* Global Styles */
+body {
+  background-color: #f3e8ff; /* Warna latar belakang ungu muda */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.track-commerce {
+  width: 100%;
+  max-width: 1024px;
+  padding: 2rem;
+  background-color: #ffffff; /* Warna latar putih */
+  border-radius: 1rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7c3aed; /* Warna ungu */
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav a {
+  margin-left: 1.5rem;
+  font-size: 1rem;
+  color: #6d28d9; /* Warna ungu tua */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #d8b4fe; /* Border ungu muda */
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-bar input:focus {
+  border-color: #7c3aed; /* Fokus border ungu */
+  box-shadow: 0 0 8px #7c3aed;
+}
+
+/* Table */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff; /* Warna putih */
+}
+
+.table thead {
+  background-color: #e9d5ff; /* Warna ungu muda */
+  color: #7c3aed; /* Warna ungu */
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.table th {
+  font-weight: bold;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #f3e8ff; /* Garis pembatas */
+}
+
+.table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.table tbody tr:hover {
+  background-color: #faf5ff; /* Latar belakang hover */
+}
+
+.table .clickable {
+  color: #3b82f6; /* Warna biru */
+  cursor: pointer;
+}
+
+.table .clickable:hover {
+  text-decoration: underline;
+}
+
+.table .status {
+  color: #7c3aed; /* Warna ungu */
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .header-nav a {
+    font-size: 0.875rem;
+  }
+
+  .search-bar input {
+    padding: 0.875rem;
+    font-size: 0.875rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+}

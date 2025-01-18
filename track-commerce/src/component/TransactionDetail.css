@@ -1,0 +1,126 @@
+/* General Styles */
+.track-commerce-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8fc;
+    color: #333;
+  }
+  
+  .transaction-detail {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6d4aff;
+  }
+  
+  .header-nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #6d4aff;
+    transition: color 0.3s;
+  }
+  
+  .header-nav a:hover {
+    color: #9e80ff;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-input:focus {
+    border-color: #6d4aff;
+  }
+  
+  /* Transaction Explorer */
+  .transaction-explorer {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9fe;
+  }
+  
+  .explorer-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #6d4aff;
+    text-align: center;
+  }
+  
+  .transaction-info {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .transaction-info p {
+    margin: 5px 0;
+  }
+  
+  .transaction-info hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+  }
+  
+  .hash-link {
+    color: #6d4aff;
+    text-decoration: none;
+    word-break: break-all;
+  }
+  
+  .hash-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .transaction-detail {
+      padding: 15px;
+    }
+  
+    .header-title {
+      font-size: 20px;
+    }
+  
+    .search-input {
+      font-size: 14px;
+    }
+  
+    .transaction-info {
+      font-size: 12px;
+    }
+  }
+  

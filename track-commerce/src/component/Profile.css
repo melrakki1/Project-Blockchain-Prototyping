@@ -1,0 +1,121 @@
+/* General Layout */
+.profile-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: linear-gradient(to bottom, #f3e5ff, #ffffff);
+  padding: 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.profile-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #6d4aff;
+  margin-bottom: 30px;
+}
+
+/* Profile Card */
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar {
+  margin-bottom: 20px;
+}
+
+.avatar-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #6d4aff;
+}
+
+.account-info {
+  text-align: left;
+  width: 100%;
+}
+
+.account-address {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.account-status {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.status-safe {
+  color: green;
+}
+
+/* Activity Section as Grid */
+.activity-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Membagi menjadi 2 kolom */
+  gap: 20px; /* Jarak antar kolom */
+  justify-content: center; /* Pusatkan isi grid */
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.history-card {
+  background: #faf9ff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-card h2 {
+  font-size: 1.5rem;
+  color: #6d4aff;
+  margin-bottom: 15px;
+}
+
+.history-list {
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.history-list .history-item {
+  margin: 15px 0;
+  padding: 10px;
+  background: #f3f0ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.history-item p {
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.history-item p:first-child {
+  font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .activity-section {
+    grid-template-columns: 1fr; /* Tampilkan sebagai 1 kolom */
+  }
+}
